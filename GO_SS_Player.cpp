@@ -43,6 +43,9 @@ void GO_SS_Player::Update(void)
 
 	m_Gravity += GRAVITY_ACCELERATION;
 	Player_Vertex.pos.y += m_Gravity;
+
+	if (Player_Vertex.pos.y >= 100.0f)
+		Player_Vertex.pos.y = 10.0f;
 }
 /*---------------------------------------------
 *				•`‰æˆ—
